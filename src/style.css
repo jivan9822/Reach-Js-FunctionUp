@@ -1,54 +1,40 @@
-body {
-  font-family: sans-serif;
-}
-
 .container {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 100px;
   gap: 10px;
+  padding: 50px;
+  background-color: rgb(37, 30, 30);
 }
-
-.div-1 {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-span {
-  font-size: 20px;
-  font-weight: bold;
-  color: red;
-}
-
 input {
-  width: 70%;
-  height: 30px;
-}
-
-.div-2 {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-button {
-  padding: 10px;
+  width: 500px;
+  height: 50px;
+  background-color: rgb(61, 59, 59);
   border: none;
-  background-color: rgb(123, 123, 237);
-  color: white;
+  border-radius: 20px;
+  text-align: center;
   font-family: cursive;
-  border-radius: 10px;
+  border: 1px solid black;
+  color: white;
+  font-size: 24px;
 }
-
-.div-3 {
+.btn {
+  border: none;
+  background-color: blue;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+  border-radius: 20px;
+  font-family: cursive;
+}
+.btn:hover {
+  background-color: rgb(146, 146, 243);
+}
+form {
   display: flex;
   flex-direction: column;
+  gap: 50px;
   align-items: center;
-}
-h3 {
-  border-radius: 10px;
-  border: solid 2px rgb(255, 55, 0);
-  padding: 20px;
 }
