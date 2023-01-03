@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "../src/logo.png";
+import "../src/style.css";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <body>
+      <div className="container">
+        <div className="div-1">
+          <img src={logo} alt="logo" />
+          <span>Logo</span>
+        </div>
+        <input />
+        <div className="div-2">
+          <label>SearchButton</label>
+          <button>Google Search</button>
+          <button>i'm Feeling Lucky</button>
+          <label>LuckyButton</label>
+        </div>
+        <SmallComp title={"Francais"} />
+      </div>
+    </body>
+  );
+}
+
+function SmallComp({ title }) {
+  return (
+    <div className="div-3">
+      <h3>Google.ca offered in: {title}</h3>
+      <span>LanguageNote</span>
     </div>
   );
 }
