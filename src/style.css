@@ -3,9 +3,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 100px auto;
   gap: 10px;
   padding: 50px;
+  color: white;
   background-color: rgb(37, 30, 30);
 }
 input {
@@ -37,4 +38,94 @@ form {
   flex-direction: column;
   gap: 50px;
   align-items: center;
+}
+
+.displayFields {
+  background-color: rgb(81, 64, 64);
+  padding: 5px 10px;
+  color: white;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.userImg {
+  width: 250px;
+  height: 250px;
+}
+
+.insideData {
+  color: rgb(42, 3, 34);
+  margin-left: 10px;
+}
+
+h3 {
+  background-color: rgb(198, 65, 198);
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.main-div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 1000px;
+}
+
+.select {
+  background-color: rgb(61, 59, 59);
+  border-radius: 20px;
+  padding: 10px 20px;
+  width: 100%;
+  font-family: cursive;
+  font-weight: bold;
+  color: white;
+}
+
+.receive {
+  display: flex;
+  align-items: center;
+  background-color: rgb(61, 59, 59);
+  border: none;
+  border-radius: 20px;
+  font-family: cursive;
+  border: 1px solid black;
+  font-size: 24px;
+  padding: 0 10px;
+  gap: 20px;
+  width: 95%;
+}
+.checkbox {
+  width: auto;
+  width: 30px;
+}
+
+form {
+  display: flex;
+  background-color: rgb(147, 119, 119);
+  gap: 10px;
+  padding: 10px;
+}
+
+.file {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.file-label {
+  background-color: rgb(124, 121, 121);
+  padding: 5px;
+  font-size: 20px;
+}
+.imageClass {
+  padding: 10px;
+}
+
+.custom-file-upload {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
 }

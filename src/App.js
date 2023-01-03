@@ -1,31 +1,19 @@
-import "../src/style.css";
-import { useState } from "react";
+// import '../src/style.css';
+// import { useState } from 'react';
+import DisplayData from './DisplayData';
+import InputForm from './InputForm';
+import { useState } from 'react';
 function App() {
-  const [text, setText] = useState("");
-  const onChangeHandler = (e) => {
-    setText(e.target.value.toUpperCase()); //?
-  };
-  const onClickHandler = (e) => {
-    e.preventDefault();
-    document.getElementsByClassName("input")[0].value = text; //?
-  };
+  const [display, setDisplay] = useState(false);
+  const [data, getData] = useState();
+  console.log('In App', data);
   return (
-    <div className="container">
-      <form>
-        <input
-          type="text"
-          className="input"
-          onChange={onChangeHandler}
-          name="name"
-          placeholder="Please type here"
-        />
-        <input
-          className="btn"
-          type="submit"
-          onClick={onClickHandler}
-          value="Submit"
-        />
-      </form>
+    <div className='container'>
+      {display ? (
+        <DisplayData data={data} />
+      ) : (
+        <InputForm getData={getData} setDisplay={setDisplay} />
+      )}
     </div>
   );
 }
