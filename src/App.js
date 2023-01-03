@@ -1,5 +1,3 @@
-// import '../src/style.css';
-// import { useState } from 'react';
 import DisplayData from './DisplayData';
 import InputForm from './InputForm';
 import { useState } from 'react';
