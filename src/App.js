@@ -3,12 +3,11 @@ import { useState } from "react";
 function App() {
   const [text, setText] = useState("");
   const onChangeHandler = (e) => {
-    setText(e.target.value.toUpperCase());
-    console.log(text);
+    setText(e.target.value.toUpperCase()); //?
   };
   const onClickHandler = (e) => {
     e.preventDefault();
-    document.getElementsByClassName("input")[0].value = text;
+    document.getElementsByClassName("input")[0].value = text; //?
   };
   return (
     <div className="container">
