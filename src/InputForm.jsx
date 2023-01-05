@@ -1,7 +1,7 @@
 import '../src/style.css';
 import { useState } from 'react';
 
-const InputForm = (props) => {
+const InputForm = () => {
   const [num, setNum] = useState(0);
   return (
     <div>
